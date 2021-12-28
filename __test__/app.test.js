@@ -1,3 +1,6 @@
+global.TextEncoder = require("util").TextEncoder;
+global.TextDecoder = require("util").TextDecoder;
+
 const { app, server, mongoose } = require("./../app");
 const Article = require("./../article.model.js");
 const request = require("supertest");
