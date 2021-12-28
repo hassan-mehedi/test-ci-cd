@@ -13,3 +13,8 @@ jobs:
               uses: actions/setup-node@v1
             - run: npm install
             - run: npm test
+            - uses: akhileshns/heroku-deploy@v3.8.8
+              with:
+                  heroku_api_key: ${{bf77addb-635e-4c3b-9558-c67823747ac8}}
+                  heroku_app_name: "test-ci-cd-mehedi"
+                  heroku_email: "mehedihassan2420@gmail.com"
